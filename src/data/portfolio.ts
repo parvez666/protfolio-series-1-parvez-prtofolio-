@@ -6,6 +6,8 @@
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
+const BASE = import.meta.env.BASE_URL;
+
 export const profile = {
   fullName: 'Shaik Mohammad Parvez',
   displayName: 'Shaik Mohammad Parvez',
@@ -23,10 +25,10 @@ export const profile = {
   links: {
     linkedin: 'https://www.linkedin.com/in/shaik-mohammad-parvez-766a09311',
   },
-  resumePdf: '/assets/Shaik_Mohammad_Parvez_Resume.pdf',
+  resumePdf: `${BASE}assets/Shaik_Mohammad_Parvez_Resume.pdf`,
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: `${BASE}assets/portrait-720.webp`,
+    srcSet: `${BASE}assets/portrait-420.webp 420w, ${BASE}assets/portrait-720.webp 720w, ${BASE}assets/portrait-1100.webp 1100w`,
     alt: 'Portrait of Shaik Mohammad Parvez',
   },
   interests: ['Digital Marketing', 'Social Media Marketing', 'Entrepreneurship'],
